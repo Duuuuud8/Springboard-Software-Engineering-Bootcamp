@@ -1,0 +1,67 @@
+# **Conceptual Exercise - CSS Fundamentals**
+
+# Question 1 ❓
+
+Explain how CSS differs from HTML in the context of web development.
+
+Answer: 
+CSS is there to style and make it look pretty whereas html is the building blocks and the foundation. HTML gives the structure and definition so that CSS is able to come back and easily give styling to the appropriate headings, paragraphs, etc. HTML is like a Word Doc, whereas CSS is the tools and clipart you can add to style it, or even a very basic PowerPoint (without any moving parts)
+
+
+# Question 2 ❓
+
+List the methods of including CSS in an HTML document and briefly describe each.
+
+Answer: 
+Inline style- applied directly to the html code with a style attribute and not ideal 
+Internal style- only good for single documents, using <style> tags inside of the <head> section of an html 
+External style- preferred method, linking an external CSS style sheet with a <link> tag. Allows styles to be applied appropriately across multiple pages and OS
+
+
+# Question 3 ❓
+
+Describe the anatomy of a CSS rule.
+
+Answer: CSS rules are built with a selector, such as <body>, <p>, <h1>, the declaration, which has curly braces {} around a set of properties with values to correspond. Examples of properties would be background, background-color, text-color followed by a colon : and the value varies dependant on the property, some exaples include picking colors (RGB, RGBA, HEX, HSL), borders, padding, font-size, font-family, text-align, line height (space between lines), text decorations (shadows). The values can be added on as backups if the first option is not viable for that OS with a comma (,) and then when the line is done you put a semi-colon.
+
+# Question 4 ❓
+
+When might you want to use RGBA instead of RGB?
+
+Answer: The advantage of using RGBA over RGB is that it lets you choose opacity, chosen with a range between numbers 0-1 (0.7)(0-being complete transparency and 1-being full color)
+
+# Question 5 ❓
+
+How do Hex color values differ from RGB?
+
+Answer: Hex and RGB both utilize 3 values one for red, green, and blue. RGB numbers range from 0-255. Hex numbers range from 00-FF, where 00 is absolutely none of that color and FF is full color. Blue for RGB is (0, 0, 255) Blue for Hex would be (0000FF)
+
+# Question 6 ❓
+
+When might a developer prefer to use HSL over other color formats?
+
+Answer: HSL lets the developer pick the hue,a color, and then on top of that they can change the saturation, effecting the intensity like how vivid or dull it is (0=gray 100=full ) and lightness effecting how dark or light something is(0=black 50=normal 100=white).
+
+# Question 7 ❓
+
+What are the primary text properties used in CSS to modify the appearance and layout of text?
+
+Answer: color, font-family, font-size, font-weight, text-align, text-decoration, text-transform, line-height, text-indent, padding, border
+
+# Question 8 ❓
+
+In what scenarios might it be beneficial to use `vh` or `vw` as a unit for font size?
+
+Answer: It lets you use the vh (viewport height) (viewport width) to set the percentage of the screen you want taken up by that value 
+
+# Question 9 ❓
+
+Explain the difference between `em` and `rem` units.
+
+Answer: em is in reference to an old typography unit using M as the relative size of letters in relation to the M. In HTML it is relative to the parent which can quickly get confusing with everything compounding. rem on the other hand is the root of the elements size is easier to use and is essentially like using font size in Word, it keeps it all relative to a set parameter.
+
+# Question 10 ❓
+
+If multiple font families are listed in the font-family property, how does the browser decide which one to display?
+
+Answer: It goes from left to right, just like how we read, it starts with the first, most left, one and if that OS cannot support it, it will go to the next option to its right until one works. It's fallback after fallback.
