@@ -1,0 +1,55 @@
+body{
+    background-color: hsla;
+    background:linear-gradient( #999eb3,#515d8a);
+    font-family: DM mono, monospace, sans-serif;
+    font-weight:300;
+    font-style: normal;
+    font-size:1rem; /*normally 1rem is=16px*/
+    line-height: 1.5rem;
+}
+
+h1{
+    text-align:center;
+    font-family:IBM Plex Mono, monospace;
+    font-weight:700;
+    font-size:2.25rem;
+    text-shadow:3px 3px 3px #ade0f7;
+    text-transform:uppercase;
+}
+
+h2{
+    text-align: justify;
+    font-family:IBM Plex Mono, monospace;
+    font-weight:500;
+    font-size:1.8rem;
+    text-shadow: 3px 3px 3px #111010b6;
+}
+
+th{
+    text-shadow: 2px 1px 2px #111010b6;
+}
+
+nav{
+    font-weight:250;
+}
+
+form{
+    font-weight: 200;
+    font-size: 1rem; /*want to keep p the same as this*/
+}
+
+a{
+    color: #ade0f7;
+    text-shadow: 3px 3px 3px #111010b6;
+    font-weight:bold;
+    text-decoration: none; /* Removing default underline from links */
+
+}
+
+li{
+    font-size:1rem; /*want to keep p the same as this*/
+}
+
+table{
+    font-size:1rem; /*want to keep p the same as this*/
+}
