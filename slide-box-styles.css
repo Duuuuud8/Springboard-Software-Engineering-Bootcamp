@@ -1,0 +1,118 @@
+/* Make the body a positioning context for anything absolute inside it */
+body
+{
+  position: relative; /* Needed so absolute elements can use this as a reference */
+  box-sizing: border-box;
+  background-color: black;
+}
+
+/* Base colored box styles (no positioning yet) */
+.red
+{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.green
+{
+  width: 80px;
+  height: 80px;
+  background-color: green;
+}
+
+.blue
+{
+  width: 60px;
+  height: 60px;
+  background-color: blue;
+}
+
+.yellow
+{
+  width: 40px;
+  height: 40px;
+  background-color: yellow;
+}
+
+/* All exercise containers are relatively positioned 
+   so their absolute children can anchor inside them */
+.exercise-1,
+.exercise-2,
+.exercise-3,
+.exercise-4
+{
+  position: relative;
+}
+
+/* All boxes inside each exercise use absolute positioning 
+   so they can be layered and placed precisely */
+.exercise-1 div,
+.exercise-2 div,
+.exercise-3 div,
+.exercise-4 div
+{
+  position: absolute;
+}
+
+/* --- Exercise 2 --------------------------------- */
+
+/* Move Exercise 2 down the page to avoid overlap with Exercise 1 */
+.exercise-2
+{
+  top: 120px;
+}
+
+/* Nest green, blue, yellow boxes inside red using offsets */
+.exercise-2 .green,
+.exercise-2 .blue,
+.exercise-2 .yellow
+{
+  top: 10px;   /* Slightly down from red’s top-left */
+  left: 10px;  /* Slightly in from red’s left */
+}
+
+/* --- Exercise 3 ----------------------------- */
+
+/* Push this section further down for spacing */
+.exercise-3
+{
+  top: 240px;
+}
+
+/* Green is relative so blue and yellow can anchor inside it */
+.exercise-3 .green
+{
+  position: relative;
+}
+
+/* Blue and yellow anchor to bottom-right of green */
+.exercise-3 .blue,
+.exercise-3 .yellow
+{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* --- Exercise 4 --------------------------------- */
+
+/* Final section spacing */
+.exercise-4
+{
+  top: 360px;
+}
+
+/* Blue is fixed to the screen’s bottom-right corner, stays in view even on scroll */
+.exercise-4 .blue
+{
+  position: fixed;
+  right: 0;
+  top: 360px; /* Align it visually with .exercise-4 */
+}
+
+/* Yellow is inside red (relative parent), anchored to red’s right edge */
+.exercise-4 .yellow
+{
+  right: 0;
+}
