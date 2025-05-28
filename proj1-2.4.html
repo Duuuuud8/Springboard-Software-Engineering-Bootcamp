@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <link rel="stylesheet" href="1-2.4style.css" />
+    <link rel="stylesheet" href="reset.css"/>
+    <!-- this links your css sheet-> rel "RELationship" - describes what kind of relationship the linked resource has to current page
+                                    href - "Hypertext REFerence" - tells browser where the link goes (URL/file path).. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<!-- Google Fonts-to copy paste link for fonts -->
+    <meta charset="UTF-8">
+    <!-- meta means "metadata" — information about the page, not visible on the page.
+charset="UTF-8" says "Use UTF-8," which is the standard way to represent pretty much any character — letters, numbers, emojis, other languages, you name it. -->
+    <title>Joshua Liles Digital CV</title>
+</head>
+                <!--
+                Joshua Liles Digital CV - HTML5 Blueprint
+                This document demonstrates:
+                - Semantic layout with header, main, section, and footer
+                - Accessible form design (labels, fieldsets, proper input use)
+                - Clean structure for resumes, portfolios, or static sites
+                - Paired with external CSS for responsive styling
+                -->
+
+  
+  <body>
+
+        <div class="container">
+            <header>
+            
+            <div class="img-wrapper-headshot">
+                    <img id="headshot-practice" src="../imgs/Proj-1-Pic.jpg" alt="Joshua Liles, practice-professional headshot">
+                    <!-- "".."" means "go up one folder." -->
+                    <!-- src -> ="folder/file"   alt=alternative text - for screen readers and when you hover -->
+                    <!-- class is ideal for most situations but id is more specific and there can only be one -->
+            </div>
+            <div class="my-name">
+                <h1>Joshua Liles</h1><hr>
+                         <!-- strong is preferred for titles, but removed it for CSS styling --> 
+            </div>
+            <nav>
+                <p>Tampa, FL | (813) 995 - 4056 <br>
+                     jliles1997@yahoo.com <br>
+                <a href="https://linkedin.com/in/joshua-liles97">Joshua Liles-linkedin</a> |
+                <a href="https://github.com/Duuuuud8" >Github Repository</a></p>
+            </nav>
+
+
+            </header>
+
+            <main> 
+                
+            <div>
+                <section class="pro-summary"> 
+                <h2>Professional Summary</h2><hr>
+                <p>Motivated and adaptable professional with over a decade of experience in customer service, leadership, and hands-on trade work. Currently training to become a Full-Stack Software Engineer through the USF Bootcamp, gaining practical experience in both front-end and back-end technologies. Known for problem-solving, collaboration, and a strong work ethic built through diverse roles in operations and construction. Excited to apply technical knowledge to build scalable, user-centric web applications.</p>
+                </section>
+            </div>
+
+
+            <div>
+                <section class="education"> 
+                <h2>Education</h2>
+                <hr>
+                
+                <table>
+                    <thead>  <!-- makes the top row more like a title row -->
+                    <tr>     <!-- needed for every row you make -->
+                        <th>Institution</th> <!-- th is a header row cell-->
+                        <th>Program</th>
+                        <th>Graduation</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td><strong><em>University of South Florida</em></strong></td>  <!-- td is for each cell in a row in the table -->
+                        <td>Full-Stack Software Engineering Bootcamp</td>
+                        <td>Expected Dec 2025</td>
+                    </tr>
+                    <tr>
+                        <td><strong><em>University of South Florida</em></strong></td>
+                        <td>Bachelor of Science in Health Sciences</td>
+                        <td>Completed</td>
+                    </tr>
+                    </tbody>
+                </table>
+                </section> 
+            </div>
+
+
+            <div>
+                <section class="skills"> 
+                <h2>Technical Skills</h2><hr>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Skills</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td><strong>Languages & Markup</strong></td>
+                        <td>HTML, CSS, JavaScript</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Frameworks & Libraries</strong></td>
+                        <td>React, Node.js, Express.js, MongoDB (MERN Stack)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tools & Platforms</strong></td>
+                        <td>Git, GitHub, Postman, VS Code</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Concepts</strong></td>
+                        <td>RESTful APIs, JWT Authentication, Agile/Scrum</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Deployment</strong></td>
+                        <td>Netlify, Heroku</td>
+                    </tr>
+                    </tbody>
+                </table>
+                </section>
+            </div>
+
+            
+            <div>
+                <section class="projects"> 
+                <h2>Projects</h2><hr>
+                    <ol>
+                    <li>
+                        <article>Capstone Project &mdash;  <a href="#"> [Project Name]</a>
+                        <ul>
+                        <li>Built a full–stack web app using React, Node.js, and MongoDB</li>
+                        <li>Features authentication, responsive UI, and RESTful API integration</li>
+                        <li><a href="#">[GitHub Repository]</a> | <a href="#">[Live Demo]</a></li>
+                        </ul>
+                        </article>
+                    </li>
+                    <li>
+                        <article> Collaboration &mdash; <a href="#"> [Project Name]</a>
+                        <ul>
+                        <li>Developed in a team of 4 using Agile methodology</li>
+                        <li>Implemented API fetching, React component design, and backend routing</li>
+                        </ul>
+                        </article>
+                    </li>
+                    </ol>
+                </section>
+            </div>
+            <!-- <article> is used for self-contained, reusable pieces of content.
+     Good for portfolios, blog posts, or project summaries that could stand alone. -->
+
+
+
+
+            <div>
+                <section class="work">
+                <h2>Work Experience</h2><hr>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Job Title</th>
+                        <th>Company</th>
+                        <th>Dates</th>
+                        <th>Summary</th>
+                    </tr>
+                    </thead>
+<!-- <thead>, <tbody>, and <tfoot> help separate structure and style in tables.
+     Thead holds column headers; tbody holds the main data. -->
+
+                    <tbody>
+                    <tr>
+                        <td class="job"><strong>Debt Analyst</strong></td>
+                        <td>New Beginnings Debt Services</td>
+                        <td>Dec 2023 – Jun 2024</td>
+                        <td>
+                            <ul>
+                                <li>Managed 1,400+ client accounts with tailored financial solutions</li>
+                                <li>Cut resolution times by 20% using process mapping in Visio</li>
+                                <li>Helped elderly clients navigate tech tools and services</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="job"><strong>Associate Store Manager</strong></td>
+                        <td>Bearss Sandwiches</td>
+                        <td>May 2011 – Dec 2024</td>
+                        <td>
+                            <ul>
+                                <li>Improved inventory and ordering systems, reducing waste by 38%</li>
+                                <li>Led recruitment and training, fostering team efficiency</li>
+                                <li>Re-engineered kitchen workflow to boost throughput by 18%</li>
+                                <li>Delivered customer-focused improvements increasing satisfaction by 12.3%</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="job"><strong>Bartender & Server</strong></td>
+                        <td>M Bird</td>
+                        <td>Jun 2021 – Oct 2023</td>
+                        <td>
+                            <ul>
+                                <li>Delivered top-tier customer service during high-volume shifts</li>
+                                <li>Oversaw inventory, cleanliness, and service flow during peak hours</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="job"><strong>Construction Crew</strong></td>
+                        <td>Genesis Diversified Services</td>
+                        <td>Sept 2024 – Mar 2025</td>
+                        <td>
+                            <ul>
+                                <li>Performed framing, demo, trench work, painting, and prep</li>
+                                <li>Adapted to fast-paced recovery environments with minimal supervision</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="job"><strong>Glazier</strong></td>
+                        <td>Gatsby Glass</td>
+                        <td>Mar 2025 – Present</td>
+                        <td>
+                            <ul>
+                                <li>Installed custom glasswork for homes and businesses</li>
+                                <li>Maintained safety standards on all job sites</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                </section>
+            </div>
+
+
+            <div>
+            <section class="soft-skills">
+            <h2>Soft Skills & Strengths</h2><hr>
+                <ul>
+                    <li>Problem-solving & adaptability</li>
+                    <li>Customer service excellence</li>
+                    <li>Cross-functional collaboration</li>
+                    <li>Technical troubleshooting</li>
+                    <li>Construction & physical installation</li>
+                    <li>Leadership and team development</li>
+                </ul>
+            </section>
+            </div>
+
+
+            <div>
+                <section id="contact-form">
+                    <!-- id is to search for things later -->
+                    <form action="#" method="post">  <!-- this makes it send to nowhere -->
+                        <h3>Contact Me:</h3><hr>
+
+                        
+                            <label for="first-name"> <!-- 'for' connects the label to the input's id -->
+                                            First Name
+                            </label>
+                                        <input 
+                                            type="text" 
+                                            id="first-name" 
+                                            name="first-name" 
+                                            placeholder="John" 
+                                            minlength="2" 
+                                            maxlength="50" 
+                                            required>
+                                            <br>
+                                            <!-- type="text" is the automatic type unless specified -->
+                                            <!-- 'id' uniquely identifies this input; must match label's 'for' -->
+                                            <!-- name="" is how it is identified when the form is sent to a server -->
+                             
+
+                            <label for="last-name">
+                                             Last Name
+                            </label>
+                                        <input 
+                                            type="text" 
+                                            id="last-name"
+                                            name="last-name" 
+                                            placeholder="Doe" 
+                                            minlength="3" 
+                                            maxlength="50" 
+                                            required>
+                                            <br>
+
+                            <!-- Phone Number Field -->
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                placeholder="(123) 456-7890" 
+                                pattern="\(\d{3}\)\s\d{3}-\d{4}" 
+                                required><br>
+                                <!--pattern explained--------
+                                        \(	A literal open parenthesis ( (the backslash \ escapes it since ( is a special character in regex)
+                                        \d{3}	Exactly 3 digits (\d = "digit", {3} = "3 times")
+                                        \)	A literal close parenthesis ) (escaped with \)
+                                        \s	A single space character
+                                        \d{3}	Exactly 3 digits again (the first part of the local number)
+                                        -	A literal dash - (no need to escape it here)
+                                        \d{4}	Exactly 4 digits (the last part of the number) -->
+                                                
+
+                            <label for="email">Email:</label>
+                            <input type="email" 
+                                name="user-email" 
+                                id="email" 
+                                placeholder="johndoe87@gmail.com" 
+                                minlength="7" 
+                                maxlength="120" 
+                                required><br>
+                            <!-- label using for & id -->
+
+                            <label for="user-organization">Organization:</label>
+                            <input  type="text"  
+                                    id="user-organization"   
+                                    name="user-organization" 
+                                    placeholder="Tech Industries LLC" 
+                                    minlength="3" 
+                                    maxlength="150" 
+                                    required><br>
+                            
+                            <label for="user-role">Role:</label>
+                            <input type="text" 
+                                    id="user-role"
+                                    name="user-role" 
+                                    placeholder="Senior Cyber-Security Engineer" 
+                                    minlength="3" 
+                                    maxlength="150" 
+                                    size="40" 
+                                    required><br>
+                                    <!-- size="" lets you make the box bigger/smaller for the input -->
+                        
+                            <label for="job-opportunity">Reason for Contact:</label>
+                            <select name="job-opportunity"
+                                    id="job-opportunity">
+                                <option value="" disabled selected hidden>--Please Choose Job Offer--</option>
+                                <option value="full-time">Full-Time Job</option>
+                                <option value="part-time">Part-Time Job</option>
+                                <option value="contract">Contract Work</option>
+                                <option value="temp">Temp Work</option>
+                                <option value="freelance">Freelance Opportunity</option>
+                                <option value="collab">Collaboration</option>
+                            </select><br>
+                            
+                            <label for="job-offer-details">Please Give a Brief Description About the Offer:</label> 
+                            <textarea   name="job-offer-details" 
+                                        id="job-offer-details"
+                                        cols="40" 
+                                        rows="5" 
+                                        minlength="30"></textarea><br>
+                            <!--  maxlength="2000"? -->
+
+
+                            <fieldset>
+                                <legend>Please Select Preferred Appointment Time:</legend>
+                              
+                                <input type="radio" id="time-early" name="contact-time" value="early">
+                                <label for="time-early">Early</label><br>
+                              
+                                <input type="radio" id="time-mid" name="contact-time" value="mid-day">
+                                <label for="time-mid">Mid-Day</label><br>
+                              
+                                <input type="radio" id="time-late" name="contact-time" value="late">
+                                <label for="time-late">Evening</label><br>
+                              </fieldset>
+                              
+                                <!-- fieldset is used to group buttons together -->
+                                    <!-- <fieldset> groups related inputs together. 
+                                    Combined with <legend>, it improves clarity and screen reader accessibility. -->
+
+
+                            <label for="contact-method">Preferred Contact Method:</label>
+                            <select name="contact-method"
+                                    id="contact-method">
+                                <option value="" disabled selected hidden>--Please Choose Contact Method--</option>
+                                <option value="email">Email</option>
+                                <option value="phone-call">Phone Call</option>
+                                <option value="phone-text">Text Message</option>
+                                <option value="Zoom">Zoom</option>
+                                <option value="Teams">Teams</option>
+                            </select><br>
+                            <!-- using <select> and <option> gives a dropdown menu -->
+                            <!-- leaving the value empty lets it not be a feasible choice -->
+
+                            <label for="date-pick">Pick a Date</label>
+                            <input type="date" name="appt-time" id="date-pick"><br>
+                            
+                            <br>
+                            <fieldset>
+                                <legend>Consent to Contact</legend>
+                                    <label for="terms-agree">Terms Agreement:
+                                    <input type="checkbox" name="terms-agree" id="terms-agree"> Click Here to Agree to be Contacted with the Given Information</label><br>
+                            </fieldset>
+
+                            If you would just like to &ldquo;talk shop&rdquo; feel free to contact me on 
+                            <a href="https://linkedin.com/in/joshua-liles97">linkedin</a><br>
+                            <!-- &_; is for special characters. They are called character entities -->
+
+                            <label for="survey">How would you rate the ease of use of this webpage:</label>
+                            <input type="range" name="survey" id="survey" min="1" max="10" step="0.5">
+                            <br>
+                            <!-- range gives a slider for the user to use and step is the amount of spaces it can travel at once -->
+
+                            <label for="feedback">Please Give Any Feedback You Might Have: </label>
+                            <textarea name="feedback" 
+                                    id="feedback"
+                                    cols="40" 
+                                    rows="5" 
+                                    minlength="3"
+                                    maxlength="4000"></textarea><br>
+                            <!-- cols and rows allow to size the textbox, but the user can also re-size -->
+
+                            <div class="submit-button">
+                                <button type="submit">Send Message</button>
+                                <!-- type="button" for when you do not want it to submit -->
+                                <!-- <input type="submit" value="Go!!!!"> this is old-school and not as user-friendly -->
+                             </div>
+
+                    </form>
+                </section>
+            </div>
+
+
+            </main>
+
+            
+                <footer>
+                <p><small>Last updated: [Apr 13, 2025]<br>
+                <b>All content Joshua Liles</b>&copy;</small></p>
+                </footer>
+            
+        </div>
+  </body>
+</html>
