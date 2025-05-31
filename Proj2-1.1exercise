@@ -1,0 +1,55 @@
+Julius Caesar Exercise
+
+## Question 1 🤔
+
+Based on the story of Julius Caesar's secret party and the Caesar Cipher, identify potential variables you would need. Please ensure you use appropriate variable naming conventions in JavaScript.
+
+### Answer 🔑
+
+'partyAddress'
+'shiftValue'
+'encryptedMessag'
+'decryptedMessage'
+'isPartySafe'
+'partyAttire'
+'bringYourOwnBooze'
+
+
+Note: You can give different names to the same variables and even introduce additional variables. This is just for fun and understanding the concepts.
+
+## Question 2 🤔
+
+After identifying the variables from the story, specify their primitive data types in JavaScript. Also, provide these variables with some initial values.
+
+### Answer 🔑
+
+let partyAddress= "ROMAN COLUSEUM" ;//String
+let shiftValue= "-4"; //Number
+let encryptedMessag= "IAAP IA BKN W JECDP KB ZAXWQYDANU"; //String
+let decryptedMessage= "MEET ME FOR A NIGHT OF DEBAUCHERY"; //String
+let isPartySafe= false; //Boolean
+let partyAttire="CASUAL"; //String
+let bringYourOwnBooze= false; //Boolean
+
+## Question 3 🤔
+
+From the variables you've identified, determine which ones should be declared using `const` and which ones should use `let`.
+
+### Answer 🔑
+
+let partyAddress= "ROMAN COLUSEUM" ;//String
+const shiftValue= "-4"; //Number
+let encryptedMessag= "IAAP IA BKN W JECDP KB ZAXWQYDANU"; //String
+let decryptedMessage= "MEET ME FOR A NIGHT OF DEBAUCHERY"; //String
+let isPartySafe= false; //Boolean
+let partyAttire="CASUAL"; //String
+let bringYourOwnBooze= false; //Boolean
+
+## Question 4 🤔
+
+Given the variable `shiftValue`, write a piece of code to check if its value is an integer.
+
+### Answer 🔑
+
+const shiftValue = -4;
+Number.isInteger(shiftValue);
