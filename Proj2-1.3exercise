@@ -1,0 +1,62 @@
+## Step 1 🧩
+
+Generate a decimal number between 0 (inclusive) and 1 (exclusive) using JavaScript's `Math` functions.
+
+### Answer 🔑
+const randomDecimal = Math.random();
+
+## Step 2 🧩
+
+Determine the desired range of numbers for our secret shift value, which is between 3 and 33.
+
+### Answer 🔑
+const range = 33 - 3 + 1;
+
+## Question 1 🤔
+
+Why did we add 1 to the difference between 33 and 3?
+
+### Answer 🔑
+This is because we want to include 3 and 33, this lets us include them both because if we just did 33-3 it would give us 30 numbers, this gives us 31.
+
+## Step 3 🧩
+
+Using the random decimal number generated in Step 1, adjust its value to fit within the desired range determined in Step 2.
+
+### Answer 🔑
+const randomInRange = randomDecimal * range;
+
+## Question 2 🤔
+
+How does multiplying `randomDecimal` by `range` help us get a number within our desired range?
+
+### Answer 🔑
+By doing this we get a number between 0 and 1, multiplying it by 31 will make it fit within our range, but still needs one more tweak to make sure it has an opportunity to land on the high side of the range we are looking for (33-3)
+
+## Step 4 🧩
+
+Round down the decimal number obtained in Step 3 to get a whole integer.
+
+### Answer 🔑
+const randomInt = Math.floor(randomInRange);
+
+## Question 3 🤔
+
+Why do we use the `Math.floor()` function instead of other rounding methods like `Math.round()`?
+
+### Answer 🔑
+Math.floor takes the number we have and makes sure it is not rounded up, going past our range, we want it to stay in the range and floor takes the deimal portion off completely.
+
+## Step 5 🧩
+
+Adjust the integer obtained in Step 4 to fit within the range of 3 to 33, inclusive.
+
+### Answer 🔑
+const shiftValue = randomInt + 3;
+
+## Question 4 🤔
+
+How does adding 3 to `randomInt` ensure that our final `shiftValue` is between 3 and 33?
+
+### Answer 🔑
+this shifts the numbers to also hit the upper portion of the range i.e. 33-3. 
