@@ -1,0 +1,66 @@
+const guests = ["ANTONY", "CICERO", "CASSIUS", "CLEOPATRA"];
+
+## Step 1 🧩
+
+Caesar remembers he forgot to add his best friend "BRUTUS" to the list. Add him to the beginning of the list.
+
+### Answer 🔑
+
+guests.unshift("BRUTUS");
+
+## Question 1 🤔
+
+How can you verify that "BRUTUS" was added to the beginning of the array?
+
+### Answer 🔑
+typing guests into the console and to be more specific use guests[0]
+
+## Step 2 🧩
+
+A herald announced the arrival of "AUGUSTUS" and "LUCIA". Add them to the end of the guest list.
+
+### Answer 🔑
+
+guests.push("AUGUSTUS", "LUCIA");
+
+## Step 3 🧩
+
+Caesar is curious. He wants to know if "SPARTACUS" has been invited. Check if he's on the list and find out at which position.
+
+### Answer 🔑
+
+const spartacusIndex = guests.indexOf("SPARTACUS");
+
+## Question 2 🤔
+
+What would the value of `spartacusIndex` be if "SPARTACUS" wasn't invited?
+
+### Answer 🔑
+It would return a -1 if it was not found.
+
+## Step 4 🧩
+
+Oops! Caesar just received a message that "CASSIUS" won't be able to make it. Remove him from the list.
+
+### Answer 🔑
+
+const indexToRemove = guests.indexOf("CASSIUS");
+guests.splice(indexToRemove, 1);
+
+
+## Step 5 🧩
+
+Caesar wants to send a special invite to the first three guests on the list. Extract these names into a new array.
+
+### Answer 🔑
+const specialGuests = guests.slice(0, 3);
+
+## Step 6 🧩
+
+Caesar decides he wants the guest list in alphabetical order. Sort the array. However, Caesar wants his most honored guest (the one added first) to remain at the top of the list. Can you think of a way to sort the guests but keep the honored ones at the top?
+
+### Answer 🔑
+const honoredGuest = guests.slice(0, 1); 
+const otherGuests = guests.slice(1); 
+otherGuests.sort(); 
+const sortedGuests = honoredGuest.concat(otherGuests); 
