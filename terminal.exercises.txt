@@ -1,0 +1,21 @@
+mkdir first
+cd first
+touch person.txt
+mv person.txt another.txt
+cp another.txt copy.txt
+rm copy.txt
+cp first second
+rmdir-rf second
+
+
+man command, shows the ins and outs aka the manual of the command it follows and shows the flags and options. man -rm brings up the manual for remove. To scroll d to go down, u to go up, or the arrow keys or PgUp/PgDn. To exit press q for quit.
+-l is for the long listing format and -a shows all files including the hidden ones starting with "."
+ctrl + arrow to go side-to-side word-by-word
+ctrl + e 
+ctrl + a 
+ctrl + w deletes that word or alt + backspace, ctrl + u deletes everything from the cursor back to the front of the line
+terminal would be windows terminal, it is the app or interface, and the shell is the interpreter and is used to do the analyzing and computing of the commands that are input on the cli.
+absolute path is a full specified path and can get you to that location from anywhere starting with the filesystem root
+relative path is interpreted from your current directory you're in and uses shorthand to add on the missing pieces to get to the location you require
+a flag is an add-on to specify and get different results. flags I have used are -a, -l, -s. 
+rm is remove and the -r flag is recursive and it deletes entire directories including subfolders and files, and the -f flag is to force it, forces the action deleting whatever is selected and everything inside of it so be super careful or you may end up like my friend with a blank computer.
