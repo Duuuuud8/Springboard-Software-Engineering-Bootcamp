@@ -1,0 +1,43 @@
+1. downloaded git already verify with git --version
+
+2. have username and email setup use these commands to check 
+
+3. cd to ~/OneDrive/Desktop/Coding Shtuff/Schoolwork/Terminal-Exercises then
+    type-   mkdir GitAdventure
+            cd GitAdventure
+            git init 
+
+4. echo "Embarking on my journey to master Git." > journey.txt 
+    git status
+    git add journey.txt 
+    git commit -m "Add journey.txt: Starting Git Journey"
+
+5. echo "This file is meant to be deleted." > temp.txt
+    git add temp.txt
+    git commit -m "Add temp.txt for deletion"
+    git rm temp.txt
+    git commit -m "Remove temp.txt as planned"
+
+6. git mv journey.txt adventure.txt
+    echo "My journey evolves into an adventure with Git." > adventure.txt
+    git add adventure.txt
+    git commit -m "Rename adventure.txt and update content."
+
+7. echo "*.log" > .gitignore
+    git add .gitignore
+    git commit -m "Ignore .log files"
+
+    echo "debugging info" > debug.log
+    git status -s --ignored
+    git check-ignore -v debug.log
+
+8. echo "Exploring the depths of Git commands and their powers." >> adventure.txt
+    git status -s
+    git add adventure.txt
+    git commit -m "Append exploration line to adventure.txt"
+
+9. git --no-pager log --follow --oneline -- journey.txt
+    git show b461835:journey.txt > adventure.txt
+    git add adventure.txt
+    git commit -m "Revert adventure.txt to original content."
+    cat adventure.txt
