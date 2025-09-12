@@ -1,16 +1,15 @@
-1. git --version
+1. downloaded git already verify with git --version
 
-2. git config --global user.name
-    git config --global user.email
+2. have username and email setup use these commands to check (git config --global user.name and git config --global user.email)
 
-3. cd ~/OneDrive/Desktop/Coding Shtuff/Schoolwork/Terminal-Exercises
-    mkdir GitAdventure
-    cd GitAdventure
-    git init
+3. cd to ~/OneDrive/Desktop/Coding Shtuff/Schoolwork/Terminal-Exercises then
+    type-   mkdir GitAdventure
+            cd GitAdventure
+            git init (creates a new, empty git repo in that current work folder)
 
-4. echo "Embarking on my journey to master Git." > journey.txt 
+4. echo "Embarking on my journey to master Git." > journey.txt (creates the file if it not already created or edits/overwrites if so, skips extra step of touch to create empty file)
     git status
-    git add journey.txt 
+    git add journey.txt (staging area)
     git commit -m "Add journey.txt: Starting Git Journey"
 
 5. echo "This file is meant to be deleted." > temp.txt

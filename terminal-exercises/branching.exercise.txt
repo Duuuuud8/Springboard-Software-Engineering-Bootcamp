@@ -1,0 +1,5 @@
+1. git checkout -b mybranch
+2. A fast-forward merge is a straight line from one commit to the next and there is no divergence, it is on the same branch. Recursive combines different commits from different branches together.
+3. git checkout mybranch or git switch mybranch
+4. git branch -d mybranch
+5. This happens when there is contradicting info on the same lines of files being merged, where edits are overlapping and git cannot figure out which one to go with.
